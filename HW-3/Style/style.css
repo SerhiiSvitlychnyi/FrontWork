@@ -13,6 +13,8 @@
 
 .my_home{
     font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
 }
 
 .header-blue{
@@ -24,9 +26,11 @@
 }
 
 .header-left{
+    font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     margin-left: 80px;
     font-size: 40px;
+    font-weight: 700px;
 }
 
 .container{
