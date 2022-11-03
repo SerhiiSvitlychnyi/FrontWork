@@ -1,0 +1,65 @@
+.sticky{
+    position: sticky;
+    top: 0;
+    background: palevioletred;
+    overflow: auto;
+}
+
+.sticky ul{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.sticky li{
+    float: left;
+    padding-left: 1.1rem;
+    margin-left: 1rem;
+    list-style: none; /*без точек*/
+}
+
+.main1{
+    overflow: auto; /*блок оставляет свое место. не схлопывается*/
+    background-color: aqua;
+}
+
+.default{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+
+    /*display: inline-block;
+    text-align: center;*/
+    float: left;
+}
+
+.red_float{
+    background-color: red;
+}
+
+.yellow_float{
+    background-color: yellow;
+}
+
+.green_float{
+    background-color: green;
+    clear: both; /*убираем оптикание*/
+}
+
+.new_block1{
+    border: 1px dashed red;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 60px 20px;
+}
+
+.new_block2{
+    border: 1px dashed greenyellow;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-bottom-left-radius: 150px 150px;
+    border-top-right-radius: 150px 150px;
+}

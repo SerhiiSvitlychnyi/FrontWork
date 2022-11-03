@@ -1,0 +1,95 @@
+div{
+    
+    width: 200px;
+    height: 200px;
+    
+}
+
+.black{
+    background-color: black;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.yellow{
+    background-color: yellow;
+    left: 50px;
+    top: 50px;
+    z-index: 3;
+    position: absolute;
+}
+
+.green{
+    background-color: green;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+}
+
+.black1{
+    background-color: black;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    position: relative;
+}
+
+.black1-1{
+    position: relative;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transition: all .500s; /*плавное движение*/
+    top: 0px;
+    left: 0px;
+}
+
+/*наведение на блок*/
+.black1:hover .black1-1{
+    top: 75px;
+    left: 75px;
+    background-color: blueviolet;
+}
+
+.yellow1{
+    background-color: yellow;
+    left: 50vw;
+    top: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+.green1{
+    background-color: green;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+}
+
+#up1{
+    position: fixed;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    right: 10px;
+    bottom: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 255, .5);
+}
+
+.ttt{
+    text-align: center;
+}
+
+.text-lorem{
+    width: 100%;
+}
+
+a{
+    color: yellow;
+    font-weight: 700;
+    line-height: 6;
+    text-decoration: none; /*без подчеркнутой линии*/
+}
