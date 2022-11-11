@@ -1,0 +1,57 @@
+section{
+/*Создаем Flex контейнер*/
+/*display: flex;*/
+/*flex-direction - Позволяет вращать главную ось*/
+/*row (значение по умолчанию): слева направо*/
+/*row-reverse: справа налево*/
+/*column: сверху вниз*/
+/*column-reverse: снизу вверх*/
+    background-color: rgba(30, 138, 173, .8);
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+    /*align-items: center; /*выравнивание по горизонтали, зависит от оси значения flex-direction, правило вешается на весь контейнет*/
+    align-items: flex-end;
+    /*order - порядок следования отдельно взятого flex-бокса внутри flex-контейнера*/
+}
+
+section > .three{
+    align-self: stretch; /*правило вешается на елемент*/
+    height: 100%;
+    margin: 0;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    margin: .3rem;
+    text-align: center;
+    color: white;
+}
+
+.one{
+    background-color: green;
+    order: 2;
+}
+
+.two{
+    background-color: orange;
+}
+
+.three{
+    background-color: red;
+    order: 1;
+}
+
+.four{
+    background-color: greenyellow;
+}
+
+.five{
+    background-color: rebeccapurple;
+}
+
+.six{
+    background-color: saddlebrown;
+}
