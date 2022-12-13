@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My style</title>
+    <link rel="stylesheet" href="./style/style2.css">
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="radio" name="one" id="first" checked>
+            <label for="first"><span class="mark"></span><span>First</span></label>
+        </div>
+        <div>
+            <input type="radio" name="one" id="second">
+            <label for="second"><span class="mark"></span><span>Second</span></label>
+        </div>
+    </form>
+
+    <table class="bord">
+        <col class="col_1">
+        <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Описание</th>
+                <th>Вид</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>color</td>
+                <td>виджет выбра цвета</td>
+                <td><input type="color" id="color"></td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td>виджет выбра календарной даты</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>datetime</td>
+                <td>виджет указания даты и времени</td>
+                <td><input type="datetime"></td>
+            </tr>
+            <tr>
+                <td>datetime-local</td>
+                <td>виджет указания местной даты и времени</td>
+                <td><input type="datetime-local"></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td>виджет указания email адреса</td>
+                <td><input type="email" placeholder="example@email.com"></td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>для web адресов</td>
+                <td><input type="url" placeholder="https://doogle.com.ua"></td>
+            </tr>
+            <tr>
+                <td>number</td>
+                <td>ввод числа</td>
+                <td><input type="number" min="10" max="100" required placeholder="0123"></td>
+            </tr>
+            <tr>
+                <td>range</td>
+                <td>виджет выбора числа в диапазоне</td>
+                <td><input type="number" min="10" max="100" step="5" required placeholder="0123"></td>
+            </tr>
+            <tr>
+                <td>search</td>
+                <td>поле поиска</td>
+                <td><input type="search" placeholder="searching..."></td>
+            </tr>
+            <tr>
+                <td>tel</td>
+                <td>для телефонных номеров</td>
+                <td><input type="tel" required placeholder="+380"></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <input type="submit" value="Отправить">
+
+    <figure>
+        <figcaption>
+            Поддержка браузерами
+            <br>
+            <cite>https://caniuse.com</cite>
+        </figcaption>
+    </figure>
+    <script>
+        const el = document.getElementById("color");
+        el.addEventListener("input", () => {
+            document.body.style.backgroundColor = el.value;
+        })
+    </script>
+
+    <form>
+        <label for="form1">Выберите станцию</label>
+        <input type="text" id="form1" list="metro">
+        <datalist id="metro">
+            <option value="Гагарина">Гагарина</option>
+            <option value="Спортивная">Спортивная</option>
+            <option value="Масельского">Масельского</option>
+            <option value="Барабашова">Барабашова</option>
+        </datalist>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Пример создания выпадающих и многозначных списков</legend>
+            <p>
+                <label for="phone1">Выберите модель:</label>
+                <select id="phone1">
+                    <option value="iPhone 7">iPhone 7</option>
+                    <option value="Xiaomi MI A1">Xiaomi MI A1</option>
+                    <option value="Samsung A1">Samsung A1</option>
+                </select>
+            </p>
+            <p>
+                <label for="phone2">Выберите модель:</label>
+                <select id="phone2">
+                    <option disabled selected>Выберите модель</option>
+                    <option value="iPhone 7">iPhone 7</option>
+                    <option value="Xiaomi MI A1">Xiaomi MI A1</option>
+                    <option value="Samsung A1">Samsung A1</option>
+                </select>
+            </p>
+            <p>
+                <!--с помощью атрибута multiple можно выбрать несколько элементов-->
+                <label for="phone3">Выберите модель:</label>
+                <select multiple id="phone3">
+                    <option disabled selected>Выберите модель</option>
+                    <option value="iPhone 7">iPhone 7</option>
+                    <option value="Xiaomi MI A1">Xiaomi MI A1</option>
+                    <option value="Samsung A1">Samsung A1</option>
+                    <option value="Nokia">Samsung A1</option>
+                </select>
+            </p>
+            <p>
+                <!--группировка элементов выпадающего списка-->
+                <label for="phone4">Выберите модель:</label>
+                <select id="phone4" name="phone4">
+                    <optgroup label="Apple">
+                        <option value="iPhone 6">iPhone 6</option>
+                        <option value="iPhone 7">iPhone 7</option>
+                        <option value="iPhone X">iPhone X</option>
+                        <option value="iPhone 12">iPhone 12</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="Motorola">Motorola</option>
+                        <option value="Xiaomi MI A1">Xiaomi MI A1</option>
+                        <option value="Samsung A1">Samsung A1</option>
+                        <option value="Nokia">Samsung A1</option>
+                    </optgroup>
+                </select>
+            </p>    
+        </fieldset>
+        <p>
+            <!--Тег textarea позволяет создавать многострочное поле для ввода текста.
+            С помощью атрибута col и rows можно задавать ширину и высоту в символах -->
+            <label for="comment">Оставьте комментарий:</label><br>
+            <textarea name="comment" id="comment" placeholder="Напишите комментарий здесь" cols="50" rows="5"></textarea>
+        </p>
+    </form>
+</body>
+
+</html>

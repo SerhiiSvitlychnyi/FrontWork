@@ -1,0 +1,60 @@
+body{
+    background: #1e7e8f;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 667px;
+    border: 1px solid rgb(14, 116, 233);
+    margin: 110px auto;
+}
+
+.menu1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    background: linear-gradient(93.38deg, #496F74 -3.47%, #6E9195 35.61%, #2D4F61 84.29%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-left: 32px;
+    margin-top: 12px;
+}
+
+.input-fields{
+    background: white;
+    width: 50%;
+}
+
+.text{
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 5px 5px 0px;
+    width: 50%;
+    background: linear-gradient(160.42deg, #517879 0%, #214159 100%);
+    box-shadow: 0px 0px 10px 9px #4E7577;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.menu2{
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+}
+
+.home{
+    margin-right: 10px;
+}
+
+
+
+.rrr{
+    display: flex;
+    align-items: center;
+}

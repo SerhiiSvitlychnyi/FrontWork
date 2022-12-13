@@ -1,0 +1,16 @@
+.labels > p > label{
+    min-width: 150px;
+    display: inline-block;
+}
+
+.labels > p > input{
+    height: 20px;
+}
+
+.pass{
+    color: red;
+}
+
+.checkboxes > label{
+    color: blue;
+}

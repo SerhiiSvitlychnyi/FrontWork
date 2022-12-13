@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</Input></title>
+    <link rel="stylesheet" href="./style/style1.css">
+</head>
+<body>
+    <form class="labels">
+        <!--для создания текстового поля в форме нужно использовать елемент input
+        с атрибутом type и значением text
+        Дополнительные атрибуты:
+        - maxlength - максимально допустимое количество символов в текстовом поле
+        - pattern - определяет шаблон, которому должен соответствовать текст, который вводится
+        - placeholder - добавляет текст, который по умолчанию отображается в текстовом поле
+        - readonly - поле доступно для чтения
+        - required - поля обязано иметь значение
+        - value - значение по умолчанию в текством поле
+    -->
+        <p>
+            <label for="login">Логин:</label>
+            <input class="pass" type="text" id="login" placeholder="login">
+        </p>
+
+        <p>
+            <label for="pass">Пароль:</label>
+            <input type="password" id="pass" maxlength="6" placeholder="password">
+        </p>
+
+        <p>
+            <label for="test">Обязательное поле:</label>
+            <input type="text" id="test" maxlength="6" required>
+        </p>
+
+        <p>
+            <!--input с типом reset сбрасывает значение всех елементов формы к начальному виду-->
+            <input type="reset" value="Сбросить" style="
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: antiquewhite;">
+            <!--input с типом submit посілает данніе на страницу, указанную в атрибуте action тега form-->
+            <input type="submit" value="Отправить">
+            
+        </p>
+    </form>
+
+    <form class="checkboxes">
+        <h3>Выберите курсы, которые хотите выучить:</h3>
+        <p>
+            <!--checked - отмечено по умолчанию-->
+            <input type="checkbox" value="html5" checked>
+            <label>HTML5; CSS3</label>
+        </p>
+        <p>
+            <input type="checkbox" value="bootstrap" id="id">
+            <label for="id">Bootstrap 5</label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" value="React">
+                React
+            </label>
+        </p>
+
+        <h3>Удобное время:</h3>
+        <p>
+            <input type="radio" name="time" value="morning">
+            <label>08:00 - 11:00</label>
+        </p>
+        <p>
+            <input type="radio" name="time" value="dinner">
+            <label>11:00 - 15:00</label>
+        </p>
+        <p>
+            <input type="radio" name="time" value="evening">
+            <label>15:00 - 18:00</label>
+        </p>
+
+        <p><button type="submit">Отправить</button></p>
+
+    </form>
+ 
+</body>
+</html>

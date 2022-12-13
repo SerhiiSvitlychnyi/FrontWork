@@ -1,0 +1,59 @@
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background: white;
+    
+}
+
+.col_1{
+    width: 10%;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label > span.mark{
+    display: inline-block;
+    border: 1px solid black;
+    width: 12px;
+    height: 12px;
+    background: red;
+    margin-right: 1rem;
+}
+
+input[type="radio"]:checked + label > span.mark{
+    background: green;    
+}
+
+.bord{
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+table, td, tr, th{
+    border: 3px solid black;
+}
+
+td{
+    width: 350px;
+}
+
+input[type="submit"]{
+    width: 20%;
+    height: 30px;
+    margin: 20px auto;
+    background-color: green;
+    text-align: center;    
+    margin-left: 500px;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+}
