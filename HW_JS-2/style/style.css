@@ -1,0 +1,16 @@
+.ppp{
+    display: flex;
+    height: 40px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    color: blueviolet;
+    margin: 0 auto;
+
+}
+
+.ppp:hover{
+    background-color: aqua;  
+    cursor: pointer;  
+}
